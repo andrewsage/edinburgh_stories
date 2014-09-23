@@ -52,14 +52,6 @@ ActiveRecord::Schema.define(version: 20140912133117) do
     t.float    "longitude"
   end
 
-  create_table "scrapbooks", force: true do |t|
-    t.integer "user_id"
-    t.string  "title",       null: false
-    t.text    "description"
-  end
-
-  add_index "scrapbooks", ["user_id"], name: "index_scrapbooks_on_user_id"
-
   create_table "taggings", force: true do |t|
     t.integer  "tag_id"
     t.integer  "memory_id"
