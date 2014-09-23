@@ -2,7 +2,7 @@
 
 html, body
   overflow-x: hidden
-  background-color: #ccc
+  background-color: #2e3863
 
 .override .mailto.ninja
   // put any override styles in here
@@ -17,6 +17,7 @@ a.feedback
 
 body
   padding-top: 70px
+  background-image: assets/paper-background-texture.png
 
 footer
   padding: 10px 0
@@ -88,7 +89,10 @@ a.rotate
     @include transform(rotate(30deg))
     @include transition(all 0.5s)
 
-/* ==================================== LAYOUT */
+/* ==================================== RESPONSIVE STUFF */
+
+.container.outerpage
+  background-image: assets/paper-background-texture.png
 
 .container img
   max-width: 100%
