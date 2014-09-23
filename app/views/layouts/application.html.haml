@@ -10,7 +10,7 @@
     = javascript_include_tag('application', 'data-turbolinks-track' => true)
     = csrf_meta_tags
   %body
-    .navbar.navbar-fixed-top.navbar-inverse(role="navigation")
+    .navbar.navbar-fixed-top(role="navigation")
       .container-fluid
         .navbar-header
           %button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-collapse")
@@ -45,17 +45,65 @@
           = message
           %span.close &times;
 
-    .searchwrapper
-      .container
-        %ul.area
-          %li
-            %a Colinton
-          %li
-            %a Colinton
-          %li
-            %a Colinton
+    .searchwrapper.not-implemented
+      .container.clearfix
 
-    = yield
+        .dropdowns
+          %ul.area.fauxselect
+            %li
+              %a.ddTitle Explore by Area &#x25BE;
+
+              %ul
+                %li
+                  %a Balerno
+                %li
+                  %a Blackhall
+                %li
+                  %a Brunstfield
+                %li
+                  %a Clemiston
+
+          %ul.category.fauxselect
+            %li
+              %a.ddTitle Explore by Category &#x25BE;
+
+              %ul
+                %li
+                  %a Animals
+                %li
+                  %a Architecture
+                %li
+                  %a Childhood
+                %li
+                  %a Education
+                %li
+                  %a Environment
+                %li
+                  %a Events
+                %li
+                  %a Fashion
+                %li
+                  %a Health and Welfare
+                %li
+                  %a Homes
+                %li
+                  %a Leisure
+                %li
+                  %a Sport
+                %li
+                  %a Technology
+                %li
+                  %a Transport
+                %li
+                  %a Work
+
+        .searchForm
+          %form
+            %input(type="text")
+            %input(type="submit")
+
+    .background
+      = yield
 
     .container-fluid
       %footer
