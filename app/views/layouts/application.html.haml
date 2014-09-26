@@ -23,20 +23,22 @@
             %span.beta beta
         .collapse.navbar-collapse
           %ul.nav.navbar-nav
+            %li{class: active_if_controller_path('home') }
+              = link_to 'Home', root_path
             %li{class: active_if_controller_path('memories') }
-              %a(href="/") Home
+              = link_to 'Browse', memories_path
             - if logged_in?
               %li{class: active_if_controller_path('my/memories') }
                 = link_to 'My Memories', my_memories_path
               %li{class: active_if_controller_path('my/profile') }
                 = link_to 'My Profile', my_profile_path
               %li
-                = link_to 'Sign Out', '/logout', method: :delete
+                = link_to 'Sign Out', logout_path, method: :delete
             - else
               %li{class: active_if_controller_path('users') }
-                %a(href="/signup") Sign Up
+                = link_to 'Sign Up', signup_path
               %li{class: active_if_controller_path('sessions') }
-                %a(href="/login") Sign In
+                = link_to 'Sign In', login_path
           %a.feedback.btn.btn-primary(href="mailto:edinburgh-stories@armoin.com?subject=Feedback") Feedback
 
     .flashes
