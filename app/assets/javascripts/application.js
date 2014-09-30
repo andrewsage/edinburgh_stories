@@ -19,4 +19,5 @@
 //= require exif
 //= require jquery.placeholder
 //= require masonry.pkgd.min
+//= require masonry-activate
 //= require_tree .
