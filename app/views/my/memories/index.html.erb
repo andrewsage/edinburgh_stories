@@ -1,11 +1,11 @@
-<div class="container-fluid">
+<div class="container">
   <div class="col-xs-12 global-memory-actions">
     <%= link_to 'Add New', new_my_memory_path, id: 'add-memory', class: 'btn btn-primary', role: 'button' %>
   </div>
-  <div class="row">
-    <div id="memories" class="container">
+  <div id="grid" class="row">
+    <div id="posts" class="">
       <% @memories.each do |memory| %>
-        <a class="memory thumb col-md-3" data-id="<%= memory.id %>" href="<%= my_memory_url(memory.id) %>" title="View details" role="button">
+        <a class="post" data-id="<%= memory.id %>" href="<%= my_memory_url(memory.id) %>" title="View details" role="button">
           <div class="img">
             <img src="<%= cache_busted_url(memory, :thumb) %>" alt="<%= memory.title %>" />
           </div>
