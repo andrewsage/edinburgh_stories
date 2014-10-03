@@ -1,5 +1,5 @@
 <div class="container">
-  <div id="grid" class="row">
+  <div id="grid">
     <div id="memories">
       <% @memories.each do |memory| %>
         <a class="memory thumb" data-id="<%= memory.id %>" href="<%= memory_url(memory.id) %>" title="View details" role="button">

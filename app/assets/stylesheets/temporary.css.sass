@@ -246,6 +246,10 @@ a.memory
 
 form
   background-color: transparent !important
+  margin: 0 0 0 0 !important
+
+  label
+    text-align: left !important
 
 a.rotate
   text-decoration: none
@@ -527,12 +531,10 @@ body.styleguide
         margin: 10px 0
 
 
-
-
 /* Grid */
 
 #memories
-  margin: 30px auto 0
+  margin: 100px auto 0
 
   .memory
     margin: 0 0 50px
@@ -543,7 +545,10 @@ body.styleguide
 
     width: 100%
 
-#grid.container
+#grid
+
+  background-image: url(image_path('paper-background-texture.png'))
+
   .memory img
     padding: 0
 
@@ -556,8 +561,6 @@ body.styleguide
 
   .memory img
     padding: 0
-
-
 
 
 /* Large devices min-width (1200px) + a .memory margin (50px) * 2 (100px) = 1300px */
