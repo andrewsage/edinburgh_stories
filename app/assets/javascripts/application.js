@@ -18,6 +18,6 @@
 //= require binaryajax
 //= require exif
 //= require jquery.placeholder
+//= require imagesloaded.pkgd.min
 //= require masonry.pkgd.min
-//= require masonry-activate
 //= require_tree .
