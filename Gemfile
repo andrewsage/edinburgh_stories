@@ -12,8 +12,8 @@ gem 'uglifier',                     '>= 1.3.0'
 gem 'coffee-rails',                 '~> 4.0.0'
 
 gem 'jquery-rails',                 '~> 3.1.2'
-gem 'turbolinks',                   '~> 2.3.0'
-gem 'jbuilder',                     '~> 2.0'
+gem 'turbolinks',                   '~> 2.4.0'
+gem 'jbuilder',                     '~> 2.2.0'
 
 gem 'faraday',                      '~> 0.9.0'
 gem 'carrierwave',                  '~> 0.10.0', github: "carrierwaveuploader/carrierwave"
@@ -36,6 +36,7 @@ end
 
 group :development, :test do
   gem 'rspec-rails',                '~> 3.1.0'
+  gem 'capybara',                   '2.4.1'
   gem 'capybara-rails',             '~> 0.0.2'
   gem 'launchy',                    '~> 2.4.2'
   gem "jasminerice",                :git => 'https://github.com/bradphelan/jasminerice.git'
