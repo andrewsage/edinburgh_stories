@@ -11,7 +11,7 @@ en:
         title: "What's the title of your memory?"
         attribution: "Who is the author or artist?"
         tag_list: "Add tags (separate with commas)"
-        area_id: "Edinburgh area"
+        area_id: "Brechin area"
       user:
         screen_name: 'Username'
         is_group: 'Who is this account for?'
