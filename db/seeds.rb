@@ -1,42 +1,7 @@
-city    = 'Edinburgh'
+city    = 'Brechin'
 country = 'United Kingdom'
 areas   = [
-  "Balerno",
-  "Blackhall",
-  "Bruntsfield",
-  "Clermiston",
-  "Colinton",
-  "Corstorphine",
-  "Craigmillar",
-  "Cramond",
-  "Currie",
-  "Dalry",
-  "Dean Village",
-  "Drumbrae",
-  "Duddingston",
-  "Fountainbridge",
-  "Gilmerton",
-  "Gorgie",
-  "Granton",
-  "Joppa",
-  "Kirkliston",
-  "Leith",
-  "Liberton",
-  "Morningside",
-  "Muirhouse",
-  "New Town",
-  "Newhaven",
-  "Newington",
-  "Old Town",
-  "Oxgangs",
-  "Piershill",
-  "Pilton",
-  "Portobello",
-  "Ratho",
-  "Sighthill",
-  "South Queensferry",
-  "Stockbridge",
-  "Wester Hailes",
+  "Brechin"
 ]
 
 areas.each do |area|

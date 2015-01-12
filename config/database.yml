@@ -5,12 +5,12 @@ common: &common
 
 development:
   <<: *common
-  database: edinburgh-scrapbooks-development
+  database: brechin-collected-development
 
 test:
   <<: *common
-  database: edinburgh-scrapbooks-test
+  database: brechin-collected-test
 
 production:
   <<: *common
-  database: edinburgh-scrapbooks-production
+  database: brechin-collected-production
