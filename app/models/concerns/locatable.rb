@@ -4,8 +4,9 @@ module Locatable
   included do
     geocoded_by :address
 
+
     after_validation :geocode, if: ->(obj){
-      obj.location.present? && (obj.location_changed? || obj.area_id_changed?)
+      obj.location.present? && (obj.location_changed? || obj.area_id_changed?) && obj.latitude.nil?
     }
     after_validation :blank_coords, unless: :location?
   end

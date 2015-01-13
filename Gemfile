@@ -33,6 +33,8 @@ gem 'pg_search'
 gem 'judge'
 gem 'file_validators'
 
+gem 'exifr'
+
 group :doc do
   gem 'sdoc',                       '~> 0.4.0'
 end

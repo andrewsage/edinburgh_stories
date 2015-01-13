@@ -11,6 +11,16 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   ## PROCESSING
+  def set_exif_location
+    imgfile = EXIFR::JPEG.new(current_path)
+    return unless imgfile
+
+    @latitude = imgfile.gps.latitude
+    @longitude = imgfile.gps.longitude
+  end
+
+
+
   def fix_exif_rotation
     manipulate! do |img|
       img.tap(&:auto_orient)
@@ -29,6 +39,7 @@ class ImageUploader < CarrierWave::Uploader::Base
     model.rotated?
   end
 
+  process :set_exif_location
   process :fix_exif_rotation
   process :set_content_type
   process :manual_rotation, if: :is_rotated?
