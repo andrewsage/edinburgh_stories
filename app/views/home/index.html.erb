@@ -6,7 +6,7 @@
     <div class="module">
      <%= image_tag 'Pod-1-Newton-Street-Coronation-Party-Edinburgh.jpg', alt: "Newton Street Coronation Party, Edinburgh" %>
      <h1>Create history...</h1>
-     <p>Join Edinburgh Collected to add and share your memories of Edinburgh</p>
+     <p><%= t '.about', app_name: APP_NAME, city: CITY %></p>
       <a href="signup" class="button green">Get started</a>
     </div>
    </div>
@@ -33,10 +33,10 @@
 
   <div id="featuredScrapbook" class="row">
     <div class="col-md-3  col-sm-3 col-xs-12 scrapbookInfo">
-      <h2>Create a scrapbook and share your memories of Edinburgh</h2>
+      <h2><%= t '.scrapbook', city: CITY %></h2>
 
       <h3>Featured scrapbook</h3>
-      <p>James Thomson & Sons Ltd., Licensed Grocer & Victualler</p>
+      <p><em>James Thomson & Sons Ltd., Licensed Grocer & Victualler</em></p>
 
       <a href="http://edinburgh-stories.herokuapp.com/scrapbooks/10" class="button teal desktop">View this Scrapbook</a>
     </div>

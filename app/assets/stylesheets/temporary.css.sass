@@ -547,9 +547,10 @@ button#create-scrapbook-button
         margin: 0
 
   #featuredScrapbook
-    border-top: 5px solid $navy-blue
+    border: 1px solid $navy-blue
+    +border-radius(3px)
     padding-bottom: 1em
-    background: darken( $cream, 5% )
+    background: lighten( $cream, 5% )
     margin: 2em 0
 
     .scrapbookInfo
@@ -558,6 +559,10 @@ button#create-scrapbook-button
       h3
         text-transform: uppercase
         font-size: 1em
+        border-bottom: 1px solid
+        padding-bottom: 0.25em
+        display: inline-block
+
       h2
         font-weight: 600
         margin: 0 0 1em 0
@@ -625,6 +630,7 @@ button#create-scrapbook-button
     text-shadow: 0px 1px 0px $navy-blue
 
   #addMemoriesDrawer
+    display: none
     text-align: center
     background: $navy-blue
     padding: 1em
@@ -1421,30 +1427,6 @@ header .navbar .navbar-collapse ul.nav li a.feedback
 
   .required
     color: $required
-
-/* ==================================== STYLEGUIDE */
-
-body.styleguide
-  padding-top: 0
-
-  h1.header
-    background: black
-    color: white
-    padding: 0.2em
-    margin: 0
-
-  nav
-    background: grey
-    padding: 0.4em
-
-    a
-      color: white
-      margin-right: 1em
-      margin-left: 0.4em
-
-  .styles
-    margin-bottom: 10px
-
 
 
 

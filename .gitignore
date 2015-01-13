@@ -16,8 +16,14 @@
 /tmp
 /public/uploads
 
-# Ignore application configuration
+# Ignore sensitive files
 /config/application.yml
+/config/database.yml
+
+# Ignore specific tasks
+/lib/tasks/categories.rake
+/lib/tasks/cc_import.rake
+/lib/tasks/data_transfer.rake
 
 # Ignore todo scratch
 .todo
